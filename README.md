@@ -1,5 +1,4 @@
-Delta Lake Logo
-Test License PyPI PyPI - Downloads
+
 
 Delta Lake is an open-source storage framework that enables building a Lakehouse architecture with compute engines including Spark, PrestoDB, Flink, Trino, and Hive and APIs for Scala, Java, Rust, Ruby, and Python.
 
