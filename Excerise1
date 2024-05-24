@@ -1,0 +1,42 @@
+Exercises
+Bike store sales
+purple-divider
+
+Hands on!
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+%matplotlib inline
+sales = pd.read_csv(
+    'data/sales_data.csv',
+    parse_dates=['Date'])
+sales.head()
+green-divider
+
+What's the mean of Customers_Age?
+# your code goes here
+Why don't you try with .mean()
+
+sales['Customer_Age'].mean()
+Go ahead and show a density (KDE) and a box plot with the Customer_Age data:
+
+# your code goes here
+sales['Customer_Age'].plot(kind='kde', figsize=(14,6))
+sales['Customer_Age'].plot(kind='box', vert=False, figsize=(14,6))
+green-divider
+
+What's the mean of Order_Quantity?
+# your code goes here
+sales['Order_Quantity'].mean()
+Go ahead and show a histogram and a box plot with the Order_Quantity data:
+
+# your code goes here
+sales['Order_Quantity'].plot(kind='hist', bins=30, figsize=(14,6))
+sales['Order_Quantity'].plot(kind='box', vert=False, figsize=(14,6))
+green-divider
+
+How many sales per year do we have?
+# your code goes here
+sales['Year'].value_counts()
+Go ahead and show a pie plot with the previous data:
